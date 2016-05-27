@@ -3,6 +3,56 @@ $contentBackground: #fff;
 $asidePadding: 25px;
 $secondaryColor: #0196ca;
 
+@mixin transition($property, $time) {
+  -webkit-transition: $property, $time, linear;
+     -moz-transition: $property, $time, linear;
+       -o-transition: $property, $time, linear;
+          transition: $property, $time, linear;
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@keyframes logo {
+    0% {
+        top: 0;
+    }
+    
+    30% {
+        top: -30px;
+    }
+ 
+    70% {
+        top: 40px;
+    }
+    
+     100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes logo {
+    0% {
+        top: 0;
+    }
+    
+    30% {
+        top: -30px;
+    }
+ 
+    70% {
+        top: 40px;
+    }
+    
+     100% {
+        top: 0;
+    }
+}
+
 ul {
     padding: 0;
     list-style: none;
@@ -25,20 +75,22 @@ body {
 //   sidebar
 
 .sidebar {
-    width: 20%;
     text-align: right;
     padding: 0;
     position: relative;
 }
 
 img.logo {
+    animation: logo 3s linear;
     margin: 60px $asidePadding 50px 0;
+    position: relative;
 }
 
 .navigation-menu {
     li {
         padding: 3px 25px;
         margin-bottom: 10px;
+        @include transition(all, 0.4s);
     }
     
     li:hover {
@@ -108,10 +160,15 @@ img.logo {
         height: 30px;
         padding-top: 3px;
         text-align: center;
+        @include transition(all, 0.4s);
     }
     
     a + a {
         margin-left: 2px;
+    }
+    
+    a:hover {
+        @include rotate(360deg);
     }
     
     a.google:hover {
@@ -123,7 +180,7 @@ img.logo {
     }
     
     a.facebook:hover {
-        background: #4a6195;
+        background: #4a6195;        
     }
     
     a.vk:hover {
@@ -142,6 +199,7 @@ img.logo {
         padding: 2px 7px;
         font-size: 11px;
         border: 2px solid transparent;
+        @include transition(all, 0.4s);
     }
     
     a.selected {
@@ -166,14 +224,43 @@ img.logo {
     }
 }
 
+.navbar-brand>img {
+    display: inline;
+}
+
+.navbar-brand {
+    float: none;
+    padding: 0;
+}
+
+.navbar-toggle {
+    border-color: $secondaryColor;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background: $secondaryColor;
+}
+
+.navbar-collapse {
+    box-shadow: none;
+    padding: 15px 0 0;
+}
+
 //   sidebar End
 
 //   main content
 
 .main-content {
-    width: 80%;
     background: $contentBackground;
     padding: 0;
+}
+
+.cv {
+    position: absolute;
+    bottom: 16%;
+    left: -50px;
 }
 
 #top-slider {
@@ -226,7 +313,7 @@ img.logo {
     }
     
     .request {
-        bottom: 15%;        
+        bottom: 15%;
     }
     
     .request a {
@@ -235,6 +322,7 @@ img.logo {
         display: inline-block;
         border: 2px solid $secondaryColor;
         padding: 10px 40px;
+        @include transition(all, 0.5s);
     }
     
     .request a.hue {
@@ -329,6 +417,7 @@ img.logo {
         border: 2px solid $secondaryColor;
         font-weight: 700;
         color: #000;
+        @include transition(all, 0.5s);
     }
     
     .learn-more a:hover {

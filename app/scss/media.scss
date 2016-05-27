@@ -1,0 +1,223 @@
+@media (min-width: 1200px) {
+    .advantage .thesis-wrapper {
+        height: 205px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 20%;
+    }
+    
+    .main-content {
+        width: 80%;
+    }
+    
+    .navbar-header {
+        float: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation-menu li {
+        padding: 2px 15px;
+    }
+    
+    .aside-menu {
+        width: 140%;
+    }
+    
+    .aside-menu li {
+        padding: 0;
+    }
+    
+    img.logo {
+        margin-right: 15px;
+    }
+    
+    .social-icons {
+        margin-top: 100px;
+        padding-right: 15px;
+    }
+    
+    .social-icons a {
+        width: 25px;
+        height: 25px;
+        padding-top: 1px;
+    }
+    
+    .languages {
+        padding-right: 15px;
+    }
+    
+    .copyright {
+        margin: 15px;
+    }
+    
+    #top-slider {
+        .greeting {
+            top: 40px;
+        }
+    
+        .main-phrase {
+            top: 20%;
+            font-size: 40px;
+        }        
+        
+        .additional-phrase {
+          font-size: 16px;
+        }
+        
+        .request a {
+            font-size: 20px;
+            padding: 5px 35px;
+        }
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .cv {
+        width: 30px;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #top-slider {
+        .greeting {
+            top: 45px;
+        }
+    
+        .main-phrase {
+            top: 22%;
+            font-size: 50px;
+        } 
+        
+        .request {
+            bottom: 13%;
+        }
+        
+        .request a {
+            font-size: 22px;
+            padding: 6px 35px;
+        }
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .cv {
+        bottom: 13%;
+    }
+}
+
+@media (max-width: 767px) {
+    img.logo {
+        margin: 0;
+    }
+    
+    .navbar-brand {
+        float: left;
+        padding: 15px 15px;
+    }
+    
+    .social-icons {
+        margin-top: 40px;
+        padding-left: 25px;
+    }
+    
+    .languages {
+        padding-left: 25px;
+    }
+    
+    .navbar-collapse {
+        text-align: left;
+    }
+    
+    #top-slider {
+        .greeting {
+            top: 15px;
+            font-size: 18px;
+        }
+    
+        .main-phrase {
+            top: 20%;
+            font-size: 30px;
+        }
+        
+        
+        .additional-phrase {
+            font-size: 14px;
+            top: 41%;
+        }
+        
+        .request a {
+            font-size: 16px;
+            padding: 2px 35px;
+        }
+    }
+    
+    .carousel-indicators {
+        margin-bottom: 2px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+        margin: 35px auto 50px;
+    }
+    
+    .advantage {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cv {
+        width: 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    #top-slider {
+        .greeting {
+            top: 15px;
+            font-size: 18px;
+        }
+    
+        .main-phrase {
+            font-size: 20px;
+        }
+        
+        
+        .additional-phrase {
+            font-size: 10px;
+            top: 45%;
+        }
+        
+        .request a {
+            font-size: 14px;
+            padding: 0 25px;
+        }
+    }
+    
+    .section-title {
+        font-size: 20px;
+        margin: 25px auto 35px;
+    }
+    
+    .advantage .title {
+        font-size: 20px;
+        top: -12px;
+    }
+    
+    .advantage {
+        width: auto;
+    }    
+    
+    .cv {
+        width: 18px;
+    }
+}
